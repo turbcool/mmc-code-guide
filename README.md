@@ -1,4 +1,3 @@
-# mmc-code-guide
 # Соглашения
 ### Сохранение контекста
 ```javascript
@@ -23,8 +22,9 @@ promiseFunc().then((ok) => {
 Верный вариант:
 ```javascript
 	promiseFunc().then(() => 
-	{		//promise resolved (ok)	},
-	{		//promise rejected (!ok)	});
+	{...}, //promise resolved (ok)
+	{...}  //promise rejected (!ok)	
+	);
 ```
 
 # Рекомендации
